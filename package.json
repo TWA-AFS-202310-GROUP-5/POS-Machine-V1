@@ -10,12 +10,13 @@
   "license": "Apache-2.0",
   "keywords": [],
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "lint": "eslint src test",
     "fix": "eslint src test --fix",
     "compile": "tsc",
-    "prepare": "npm run compile"
+    "prepare": "npm run compile",
+    "start": "ts-node ./src/PrintReceipt.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
